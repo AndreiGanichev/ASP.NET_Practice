@@ -47,3 +47,11 @@ D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\System
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\obj\Debug\ASP.NET_Practice.csprojResolveAssemblyReference.cache
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\obj\Debug\ASP.NET_Practice.dll
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\obj\Debug\ASP.NET_Practice.pdb
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.dll
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Common.dll
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Common.WebHost.dll
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Mvc.dll
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.xml
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Common.xml
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Common.WebHost.xml
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice\bin\Ninject.Web.Mvc.xml
