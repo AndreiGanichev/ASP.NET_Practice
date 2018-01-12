@@ -19,9 +19,9 @@ namespace ASP.NET_Practice.DataAccess.Models
         [Required]
         public DateTime AddAtDate { get; set; }
 
-        public DateTime ActivateAtDate { get; set; }
+        public DateTime? ActivateAtDate { get; set; }
 
-        public DateTime LastVisitDate { get; set; }
+        public DateTime? LastVisitDate { get; set; }
 
         public string PhotoPath { get; set; }
 

@@ -14,44 +14,23 @@ namespace ASP.NET_Practice.DataAccess.SqlRepository
             }
         }
 
-        public Role CreateRole(Role role)
+        public Role AddRole(Role role)
         {
-            try
-            {
-                var newRole = DbContext.Roles.Add(role);
-                DbContext.SaveChanges();
-                return newRole;
-            }
-            catch
-            {
-                return null;
-            }
+            var newRole = DbContext.Roles.Add(role);
+            DbContext.SaveChanges();
+            return newRole;
         }
 
-        public bool DeleteRole(Role role)
+        public void DeleteRole(Role role)
         {
-            try
-            {
-                DbContext.Roles.Remove(role);
-                DbContext.SaveChanges();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            DbContext.Roles.Remove(role);
+            DbContext.SaveChanges();
         }
 
-        public Role UpdateRole(Role role)
+        public void UpdateRole(Role role)
         {
-            Role updatedRole = null;
-
-            if (DeleteRole(role))
-            {
-                updatedRole = CreateRole(role);
-            }
-
-            return updatedRole;
+            DbContext.Entry(role).State = System.Data.Entity.EntityState.Modified;
+            DbContext.SaveChanges();
         }
     }
 }

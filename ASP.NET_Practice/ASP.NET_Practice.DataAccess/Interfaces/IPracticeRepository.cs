@@ -8,11 +8,11 @@ namespace ASP.NET_Practice.DataAccess.Interfaces
         IQueryable<Role> Roles { get; }
         IQueryable<User> Users { get; }
 
-        Role CreateRole(Role role);
-        Role UpdateRole(Role role);
-        bool DeleteRole(Role role);
-        User CreateUser(User role);
-        User UpdateUser(User role);
-        bool DeleteUser(User role);
+        Role AddRole(Role role);
+        void UpdateRole(Role role);
+        void DeleteRole(Role role);
+        User AddUser(User user);
+        void UpdateUser(User user);
+        void DeleteUser(User user);
     }
 }

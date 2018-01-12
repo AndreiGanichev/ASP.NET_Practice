@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ASP.NET_Practice.DataAccess
 {
-    public class EFDbInitializer : DropCreateDatabaseIfModelChanges<PracticeContext>
+    public class EFDbInitializer : DropCreateDatabaseAlways<PracticeContext>
     {
         protected override void Seed(PracticeContext context)
         {

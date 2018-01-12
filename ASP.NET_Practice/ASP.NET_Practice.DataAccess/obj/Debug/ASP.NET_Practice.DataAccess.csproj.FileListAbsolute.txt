@@ -8,3 +8,5 @@ D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess\bin\Debug\EntityFramework.SqlServer.xml
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess\obj\Debug\ASP.NET_Practice.DataAccess.dll
 D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess\obj\Debug\ASP.NET_Practice.DataAccess.pdb
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess\bin\Debug\Ninject.dll
+D:\GitRepositories\ASP.NET_Practice\ASP.NET_Practice\ASP.NET_Practice.DataAccess\bin\Debug\Ninject.xml

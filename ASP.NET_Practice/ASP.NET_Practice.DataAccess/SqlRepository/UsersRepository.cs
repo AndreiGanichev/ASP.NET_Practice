@@ -14,44 +14,23 @@ namespace ASP.NET_Practice.DataAccess.SqlRepository
             }
         }
 
-        public User CreateUser(User User)
+        public User AddUser(User user)
         {
-            try
-            {
-                var newUser = DbContext.Users.Add(User);
-                DbContext.SaveChanges();
-                return newUser;
-            }
-            catch
-            {
-                return null;
-            }
+            var newUser = DbContext.Users.Add(user);
+            DbContext.SaveChanges();
+            return newUser;
         }
 
-        public bool DeleteUser(User User)
+        public void DeleteUser(User user)
         {
-            try
-            {
-                DbContext.Users.Remove(User);
-                DbContext.SaveChanges();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            DbContext.Users.Remove(user);
+            DbContext.SaveChanges();
         }
 
-        public User UpdateUser(User User)
+        public void UpdateUser(User user)
         {
-            User updatedUser = null;
-
-            if (DeleteUser(User))
-            {
-                updatedUser = CreateUser(User);
-            }
-
-            return updatedUser;
+            DbContext.Entry(user).State = System.Data.Entity.EntityState.Modified;
+            DbContext.SaveChanges();
         }
     }
 }
