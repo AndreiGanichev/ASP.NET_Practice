@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 using NLog;
+using ASP.NET_Practice.DataAccess;
+using System.Data.Entity;
 
 namespace ASP.NET_Practice
 {
@@ -20,6 +18,7 @@ namespace ASP.NET_Practice
             _logger.Info("Application starting");
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            Database.SetInitializer<PracticeContext>(new EFDbInitializer());
         }
 
         /// <summary>

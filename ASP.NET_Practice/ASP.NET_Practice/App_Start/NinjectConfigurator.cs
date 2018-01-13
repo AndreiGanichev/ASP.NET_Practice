@@ -5,6 +5,11 @@ using Ninject;
 using Ninject.Web.Common;
 using Ninject.Web.Common.WebHost;
 using ASP.NET_Practice.Models;
+using ASP.NET_Practice.DataAccess.Interfaces;
+using ASP.NET_Practice.DataAccess.SqlRepository;
+using ASP.NET_Practice.DataAccess;
+using System.Configuration;
+using System.Data.Entity;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ASP.NET_Practice.App_Start.NinjectConfigurator), "OnStart")]
 [assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(ASP.NET_Practice.App_Start.NinjectConfigurator), "Onstop")]
@@ -47,6 +52,9 @@ namespace ASP.NET_Practice.App_Start
         private static void RegisterServices(IKernel kernel)
         {
             kernel.Bind<IWeapon>().To<Sword>();
+            kernel.Bind<IPracticeRepository>().To<SqlRepository>();
+            kernel.Bind<PracticeContext>().ToConstructor<PracticeContext>(
+                c => new PracticeContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));
         }
     }
 }

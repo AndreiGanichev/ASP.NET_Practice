@@ -1,4 +1,4 @@
-﻿@model NET_Practice.Models.IWeapon
+﻿@model List<ASP.NET_Practice.DataAccess.Models.Role>
 @{
     Layout = null;
 }
@@ -11,8 +11,16 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>@Model.Execute()</h1>
+    <h1>Роли</h1>
     <div> 
+        @foreach(var role in Model)
+        {
+            <div class="roles">
+                <span class="id">@role.Id</span>
+                <span class="name">@role.Name</span>
+                <span class="code">@role.Code</span>
+            </div>
+        }
     </div>
 </body>
 </html>
