@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace ASP.NET_Practice.DataAccess
 {
-    public class EFDbInitializer : DropCreateDatabaseAlways<PracticeContext>
+    public class EFDbInitializer : DropCreateDatabaseIfModelChanges<PracticeContext>
     {
         protected override void Seed(PracticeContext context)
         {

@@ -3,7 +3,7 @@ using ASP.NET_Practice.DataAccess.SingleEntityRepo.Models;
 using System.Linq;
 using System.Web.Mvc;
 
-namespace ASP.NET_Practice.Controllers
+namespace ASP.NET_Practice.Areas.Default.Controllers
 {
     public class SingleEntityRepoController : Controller
     {

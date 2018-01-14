@@ -13,11 +13,11 @@ namespace ASP.NET_Practice
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+            //не регистрируем Default маршрут, т.к. это сделано при регистрации default area
+            //routes.MapRoute(
+            //    name: "Default",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new {controller = "Home", action = "Index", id = UrlParameter.Optional });
         }
     }
 }

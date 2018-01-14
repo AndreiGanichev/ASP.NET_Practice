@@ -3,6 +3,8 @@ using System.Web.Routing;
 using NLog;
 using ASP.NET_Practice.DataAccess;
 using System.Data.Entity;
+using ASP.NET_Practice.Areas.Admin;
+using ASP.NET_Practice.Areas.Default;
 
 namespace ASP.NET_Practice
 {
@@ -16,7 +18,21 @@ namespace ASP.NET_Practice
         protected void Application_Start()
         {
             _logger.Info("Application starting");
-            AreaRegistration.RegisterAllAreas();
+
+            #region AreasRegistration
+            var adminArea = new AdminAreaRegistration();
+            var adminAreaContext = new AreaRegistrationContext(adminArea.AreaName, RouteTable.Routes);
+            adminArea.RegisterArea(adminAreaContext);
+
+            var defaultArea = new DefaultAreaRegistration();
+            var defaultAreaContext = new AreaRegistrationContext(defaultArea.AreaName, RouteTable.Routes);
+            defaultArea.RegisterArea(defaultAreaContext);
+            #endregion
+
+            //если сразу регистрировать все области, то сначала зарегается Default и тогда до Admin будет не достучаться
+            //поэтому используем код выше
+            //AreaRegistration.RegisterAllAreas();
+
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Database.SetInitializer<PracticeContext>(new EFDbInitializer());
         }

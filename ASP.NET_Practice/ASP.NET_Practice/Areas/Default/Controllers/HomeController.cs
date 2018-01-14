@@ -4,7 +4,7 @@ using Ninject;
 using ASP.NET_Practice.DataAccess.Interfaces;
 using System.Linq;
 
-namespace ASP.NET_Practice.Controllers
+namespace ASP.NET_Practice.Areas.Default.Controllers
 {
     public class HomeController : Controller
     {
