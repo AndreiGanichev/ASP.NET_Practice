@@ -1,0 +1,26 @@
+﻿@model List<ASP.NET_Practice.DataAccess.SingleEntityRepo.Models.Role>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SingleEntityRepo</title>
+</head>
+<body>
+    <div> 
+        <ul>
+            @foreach (var role in Model)
+            {
+                <li>
+                    <span>@role.Id</span><span>@role.Name</span><span>@role.Code</span>
+                </li>
+            }
+        </ul>
+
+    </div>
+</body>
+</html>

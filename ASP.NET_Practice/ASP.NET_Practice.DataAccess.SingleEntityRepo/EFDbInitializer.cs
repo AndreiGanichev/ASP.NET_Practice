@@ -1,9 +1,9 @@
-﻿using ASP.NET_Practice.DataAccess.Models;
+﻿using ASP.NET_Practice.DataAccess.SingleEntityRepo.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 
-namespace ASP.NET_Practice.DataAccess
+namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
 {
     public class EFDbInitializer : DropCreateDatabaseAlways<PracticeContext>
     {
@@ -54,7 +54,7 @@ namespace ASP.NET_Practice.DataAccess
                 AddAtDate = DateTime.UtcNow
             };
 
-            return new[] { user1, user2};
+            return new[] { user1, user2 };
         }
     }
 }

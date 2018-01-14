@@ -10,6 +10,10 @@ using ASP.NET_Practice.DataAccess.SqlRepository;
 using ASP.NET_Practice.DataAccess;
 using System.Configuration;
 using System.Data.Entity;
+using ASP.NET_Practice.DataAccess.SingleEntityRepo.Models;
+using ASP.NET_Practice.DataAccess.SingleEntityRepo.Interfaces;
+using SingleEntityRepoContext = ASP.NET_Practice.DataAccess.SingleEntityRepo.PracticeContext;
+using ASP.NET_Practice.DataAccess.SingleEntityRepo.Repositories;
 
 [assembly: WebActivatorEx.PreApplicationStartMethod(typeof(ASP.NET_Practice.App_Start.NinjectConfigurator), "OnStart")]
 [assembly: WebActivatorEx.ApplicationShutdownMethod(typeof(ASP.NET_Practice.App_Start.NinjectConfigurator), "Onstop")]
@@ -55,6 +59,9 @@ namespace ASP.NET_Practice.App_Start
             kernel.Bind<IPracticeRepository>().To<SqlRepository>();
             kernel.Bind<PracticeContext>().ToConstructor<PracticeContext>(
                 c => new PracticeContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));
+            kernel.Bind<IGenericRepository<Role>>().To<GenericRepository<Role>>();
+            kernel.Bind<SingleEntityRepoContext>().ToConstructor(
+                c => new SingleEntityRepoContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));
         }
     }
 }

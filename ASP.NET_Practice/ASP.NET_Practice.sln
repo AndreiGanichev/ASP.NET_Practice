@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_Practice", "ASP.NET_Practice\ASP.NET_Practice.csproj", "{C42279CC-8E7B-402D-9D1B-7988B02D4984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_Practice.DataAccess", "ASP.NET_Practice.DataAccess\ASP.NET_Practice.DataAccess.csproj", "{8AC4F106-1DEB-4BE4-AC6C-1612C186A0A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_Practice.DataAccess.MultiEntityRepo", "ASP.NET_Practice.DataAccess\ASP.NET_Practice.DataAccess.MultiEntityRepo.csproj", "{8AC4F106-1DEB-4BE4-AC6C-1612C186A0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET_Practice.DataAccess.SingleEntityRepo", "ASP.NET_Practice.DataAccess.SingleEntityRepo\ASP.NET_Practice.DataAccess.SingleEntityRepo.csproj", "{B4D73B22-F216-45BA-A83F-81CDDAF3DBB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8AC4F106-1DEB-4BE4-AC6C-1612C186A0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AC4F106-1DEB-4BE4-AC6C-1612C186A0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AC4F106-1DEB-4BE4-AC6C-1612C186A0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D73B22-F216-45BA-A83F-81CDDAF3DBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D73B22-F216-45BA-A83F-81CDDAF3DBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D73B22-F216-45BA-A83F-81CDDAF3DBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D73B22-F216-45BA-A83F-81CDDAF3DBB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
