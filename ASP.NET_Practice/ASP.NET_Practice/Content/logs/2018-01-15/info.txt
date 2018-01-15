@@ -1,0 +1,9 @@
+2018-01-15 08:07:55.7139|INFO|ASP.NET_Practice.MvcApplication|Application starting
+2018-01-15 08:07:56.4560|INFO|ASP.NET_Practice.MvcApplication|Application Init
+2018-01-15 08:07:58.0321|INFO|ASP.NET_Practice.MvcApplication|Application Init
+2018-01-15 08:09:22.2449|INFO|ASP.NET_Practice.MvcApplication|Application starting
+2018-01-15 08:09:22.3069|INFO|ASP.NET_Practice.MvcApplication|Application Init
+2018-01-15 08:09:22.3329|INFO|ASP.NET_Practice.MvcApplication|Application Init
+2018-01-15 08:10:24.6344|INFO|ASP.NET_Practice.MvcApplication|Application starting
+2018-01-15 08:10:24.6964|INFO|ASP.NET_Practice.MvcApplication|Application Init
+2018-01-15 08:10:24.7224|INFO|ASP.NET_Practice.MvcApplication|Application Init

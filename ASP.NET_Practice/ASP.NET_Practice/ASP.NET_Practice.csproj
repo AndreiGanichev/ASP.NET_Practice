@@ -158,8 +158,9 @@
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Default\DefaultAreaRegistration.cs" />
-    <Compile Include="Areas\Default\Controllers\HomeController.cs" />
     <Compile Include="Areas\Default\Controllers\SingleEntityRepoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RepositoryBaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -177,6 +178,7 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Default\Views\web.config" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -190,7 +192,7 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Default\Models\" />
     <Folder Include="Areas\Default\Views\Shared\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Views\RepositoryBase\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASP.NET_Practice.DataAccess.SingleEntityRepo\ASP.NET_Practice.DataAccess.SingleEntityRepo.csproj">
