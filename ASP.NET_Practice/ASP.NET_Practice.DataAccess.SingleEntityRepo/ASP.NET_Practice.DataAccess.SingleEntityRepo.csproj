@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EFDbInitializer.cs" />
+    <Compile Include="GenericRepositoryExtentions.cs" />
     <Compile Include="Interfaces\IBaseId.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
     <Compile Include="Models\Role.cs" />

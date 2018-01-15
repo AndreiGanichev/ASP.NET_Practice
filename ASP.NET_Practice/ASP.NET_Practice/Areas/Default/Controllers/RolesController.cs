@@ -5,17 +5,17 @@ using System.Web.Mvc;
 
 namespace ASP.NET_Practice.Areas.Default.Controllers
 {
-    public class SingleEntityRepoController : Controller
+    public class RolesController : Controller
     {
-        IGenericRepository<Role> _rolesRepo;
+        private IGenericRepository<Role> _rolesRepo;
 
-        public SingleEntityRepoController(IGenericRepository<Role> rolesRepo)
+        public RolesController(IGenericRepository<Role> rolesRepo)
         {
             _rolesRepo = rolesRepo;
         }
 
-        // GET: SingleEntityRepo
-        public ActionResult SingleEntityRepo()
+        // GET: Default/Roles
+        public ActionResult GetAll()
         {
             return View(_rolesRepo.GetAll().ToList());
         }

@@ -1,5 +1,4 @@
-﻿@model List<ASP.NET_Practice.DataAccess.Models.Role>
-@{
+﻿@{
     Layout = null;
 }
 
@@ -12,16 +11,11 @@
 </head>
 <body>
     <h1>Роли</h1>
-    <div> 
-        @foreach(var role in Model)
-        {
-            <div class="roles">
-                <span class="id">@role.Id</span>
-                <span class="name">@role.Name</span>
-                <span class="code">@role.Code</span>
-            </div>
-        }
+    <div class="menu">
+        <ul>
+            <li>@Html.ActionLink("Пользователи", "GetAll", "Users")</li>
+            <li>@Html.ActionLink("Роли", "GetAll", "Roles")</li>
+        </ul> 
     </div>
-    @Html.ActionLink("Роли через обобщенный репозиторий", "SingleEntityRepo", "SingleEntityRepo");
 </body>
 </html>

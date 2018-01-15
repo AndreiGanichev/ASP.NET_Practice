@@ -55,10 +55,7 @@ namespace ASP.NET_Practice.App_Start
         /// <param name="kernel"></param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<IWeapon>().To<Sword>();
-            kernel.Bind<IPracticeRepository>().To<SqlRepository>();
-            kernel.Bind<PracticeContext>().ToConstructor<PracticeContext>(
-                c => new PracticeContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));
+            kernel.Bind<IGenericRepository<User>>().To<GenericRepository<User>>();
             kernel.Bind<IGenericRepository<Role>>().To<GenericRepository<Role>>();
             kernel.Bind<SingleEntityRepoContext>().ToConstructor(
                 c => new SingleEntityRepoContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));

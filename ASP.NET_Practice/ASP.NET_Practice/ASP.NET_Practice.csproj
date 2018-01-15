@@ -157,8 +157,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Default\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Default\Controllers\RolesController.cs" />
     <Compile Include="Areas\Default\DefaultAreaRegistration.cs" />
-    <Compile Include="Areas\Default\Controllers\SingleEntityRepoController.cs" />
+    <Compile Include="Areas\Default\Controllers\UsersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RepositoryBaseController.cs" />
     <Compile Include="Global.asax.cs">
@@ -174,11 +176,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Areas\Default\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Default\Views\SingleEntityRepo\SingleEntityRepo.cshtml" />
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Default\Views\web.config" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Areas\Default\Views\Users\GetAll.cshtml" />
+    <Content Include="Areas\Default\Views\Roles\GetAll.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

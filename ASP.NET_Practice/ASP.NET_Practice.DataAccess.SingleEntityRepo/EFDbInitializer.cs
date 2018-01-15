@@ -49,7 +49,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
                 Id = 1,
                 Name = "Петр",
                 Email = "petr@somewhere.com",
-                RoleId = 1,
+                RoleId = 2,
                 Password = "petrTheFirst",
                 AddAtDate = DateTime.UtcNow
             };

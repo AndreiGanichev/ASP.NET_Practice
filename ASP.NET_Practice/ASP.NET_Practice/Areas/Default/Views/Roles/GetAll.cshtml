@@ -8,19 +8,19 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>SingleEntityRepo</title>
+    <title>Роли</title>
 </head>
 <body>
     <div> 
-        <ul>
-            @foreach (var role in Model)
-            {
+        @foreach(var role in Model)
+        {
+            <ul>
                 <li>
-                    <span>@role.Id</span><span>@role.Name</span><span>@role.Code</span>
+                    <span>@role.Name</span>
+                    <span>@role.Code</span>
                 </li>
-            }
-        </ul>
-
+            </ul>
+        }
     </div>
 </body>
 </html>
