@@ -10,7 +10,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo.Models
         public int Id { get; set; }
 
         [Required]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
 
         [Required]
         public string Email { get; set; }

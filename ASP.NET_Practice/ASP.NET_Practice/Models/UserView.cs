@@ -9,7 +9,7 @@ namespace ASP.NET_Practice.Models
     //показаны два варианта валидации: IValidatableObject и с помощью атрибутов DataAnnotations
     public class UserView : IValidatableObject
     {
-        public string Name { get; set; }
+        public string FirstName { get; set; }
 
         //[Required(ErrorMessage = "Введите Email")]
         //[RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Некорректный Email")]

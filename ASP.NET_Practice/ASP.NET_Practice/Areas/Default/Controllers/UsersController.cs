@@ -27,7 +27,7 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
         public ActionResult GetAll()
         {
             var users = _usersRepo.GetAll().IncludeMultiple(user => user.Role).ToList();
-            return View(_usersRepo.GetAll().ToList());
+            return View(users);
         }
 
         [HttpGet]
