@@ -1,0 +1,69 @@
+﻿@model ASP.NET_Practice.Models.UserView
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @using (Html.BeginForm("Add", "Users", FormMethod.Post, new { @class = "form-horizontal" }))
+    {
+        <fieldset>
+            <div class="control-group">
+                <label class="control-label" for="Name">Имя</label>
+                <div class="controls">
+                    @Html.ValidationMessage("Name")
+                    @Html.TextBox("Name", Model.Name)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="BirthDate">Дата рождения</label>
+                <div class="controls">
+                    @Html.DropDownList("BirthDay", Model.BirthDayList)
+                    @Html.DropDownList("BirthMonth", Model.BirthMonthList)
+                    @Html.DropDownList("BirthYear", Model.BirthYearList)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="Email">Email</label>
+                <div class="controls">
+                    @Html.ValidationMessage("Email")
+                    @Html.TextBox("Email", Model.Email)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="Password">Пароль</label>
+                <div class="controls">
+                    @Html.ValidationMessage("Password")
+                    @Html.Password("Password", Model.Password)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="ConfirmPassword">Подтвердите пароль</label>
+                <div class="controls">
+                    @Html.ValidationMessage("ConfirmPassword")
+                    @Html.Password("ConfirmPassword", Model.ConfirmPassword)
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="Captcha">
+                <img src=@Url.Action("Captcha", "Users") alt="captcha" />
+                </label>
+                <div class="controls">
+                    @Html.ValidationMessage("Captcha")
+                    @Html.TextBox("Captcha", Model.Captcha)
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                @Html.ActionLink("Отмена", "GetAll", null, null, new { @class = "btn"})
+            </div>
+        </fieldset>
+    }
+</body>
+</html>

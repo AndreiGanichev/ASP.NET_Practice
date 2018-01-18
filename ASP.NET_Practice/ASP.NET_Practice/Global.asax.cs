@@ -1,10 +1,11 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 using NLog;
-using ASP.NET_Practice.DataAccess;
+using ASP.NET_Practice.DataAccess.SingleEntityRepo;
 using System.Data.Entity;
 using ASP.NET_Practice.Areas.Admin;
 using ASP.NET_Practice.Areas.Default;
+using ASP.NET_Practice.Mappers;
 
 namespace ASP.NET_Practice
 {
@@ -35,6 +36,7 @@ namespace ASP.NET_Practice
 
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             Database.SetInitializer<PracticeContext>(new EFDbInitializer());
+            CommonMapper.Configurate();
         }
 
         /// <summary>

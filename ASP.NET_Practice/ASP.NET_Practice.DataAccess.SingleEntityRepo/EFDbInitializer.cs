@@ -38,6 +38,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
             {
                 Id = 1,
                 Name = "Иван",
+                BirthDate = new DateTime(1990, 12, 31),
                 Email = "ivan@nowhere.com",
                 RoleId = 1,
                 Password = "ivanTheGreat",
@@ -48,6 +49,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
             {
                 Id = 1,
                 Name = "Петр",
+                BirthDate = new DateTime(1989, 1, 15),
                 Email = "petr@somewhere.com",
                 RoleId = 2,
                 Password = "petrTheFirst",

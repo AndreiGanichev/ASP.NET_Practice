@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -104,6 +108,7 @@
       <HintPath>..\packages\NLog.4.4.12\lib\net45\NLog.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -166,7 +171,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\CaptchaImage.cs" />
+    <Compile Include="Mappers\CommonMapper.cs" />
+    <Compile Include="Mappers\IMapper.cs" />
     <Compile Include="Models\Sword.cs" />
+    <Compile Include="Models\UserView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -182,6 +191,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Areas\Default\Views\Users\GetAll.cshtml" />
     <Content Include="Areas\Default\Views\Roles\GetAll.cshtml" />
+    <Content Include="Areas\Default\Views\Users\Add.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -195,7 +205,6 @@
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Default\Models\" />
     <Folder Include="Areas\Default\Views\Shared\" />
-    <Folder Include="Views\RepositoryBase\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASP.NET_Practice.DataAccess.SingleEntityRepo\ASP.NET_Practice.DataAccess.SingleEntityRepo.csproj">
