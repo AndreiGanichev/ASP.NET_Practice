@@ -1,0 +1,71 @@
+2018-01-20 17:13:16.5348|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 17:15:00.9577|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 17:16:32.3369|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 17:18:29.4326|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 17:20:19.9450|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 18:59:03.1894|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:01:29.6338|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:02:57.2208|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:03:47.0297|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:03:56.3192|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:04:24.3188|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:04:42.9269|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:05:47.3735|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:06:46.2059|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:06:54.7824|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:07:48.4085|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:09:46.7192|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:11:38.7986|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:11:47.6271|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:13:40.7486|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:13:43.3838|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:15:21.8394|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:22:31.1410|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:24:19.4812|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:25:21.8197|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:25:21.8197|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:26:53.8830|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:28:15.4677|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:28:15.4677|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:31:54.0812|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:33:14.9998|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:35:14.6896|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:35:14.6896|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:37:37.3778|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:37:52.1266|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:39:20.9837|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:39:24.0469|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:41:37.0905|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:41:41.5708|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:43:43.0487|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:43:45.8099|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:47:09.0295|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 19:47:15.1448|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:03:14.0117|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:03:17.7679|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:16:31.0363|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:16:37.9957|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:22:12.9108|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:22:28.8167|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:28:37.4958|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:29:10.6697|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Ссылка на объект не указывает на экземпляр объекта.
+2018-01-20 20:36:49.5330|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:36:50.4010|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:40:40.5462|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:40:43.8994|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:41:19.0644|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:41:24.3787|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:41:32.6362|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:42:23.8821|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:42:24.7011|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:47:08.4424|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:47:11.7395|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:47:28.1025|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:47:29.4336|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:47:38.1211|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:48:21.1485|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:48:53.6014|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: The LINQ expression node type 'Invoke' is not supported in LINQ to Entities.
+2018-01-20 20:52:48.3528|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Неверное количество аргументов, заданных для вызова метода "Boolean Equals(System.String, System.String, System.StringComparison)"
+2018-01-20 20:53:11.1421|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Неверное количество аргументов, заданных для вызова метода "Boolean Equals(System.String, System.String, System.StringComparison)"
+2018-01-20 20:53:11.1551|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Неверное количество аргументов, заданных для вызова метода "Boolean Equals(System.String, System.String, System.StringComparison)"
+2018-01-20 20:53:22.1957|ERROR|ASP.NET_Practice.Auth.CustomAuthentication|Failed authentication: Неверное количество аргументов, заданных для вызова метода "Boolean Equals(System.String, System.String, System.StringComparison)"

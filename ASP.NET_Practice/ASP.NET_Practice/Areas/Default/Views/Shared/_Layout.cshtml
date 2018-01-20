@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="navbar nav-pills pull-right">
+                    @Html.Action("UserLogin", "Home")
+                </ul>
+            </div>
+        </div> 
+    </div>
+
+    @RenderBody()
+</body>
+</html>

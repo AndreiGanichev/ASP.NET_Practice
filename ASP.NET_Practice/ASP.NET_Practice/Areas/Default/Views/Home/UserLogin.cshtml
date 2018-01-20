@@ -1,0 +1,12 @@
+﻿@model ASP.NET_Practice.DataAccess.SingleEntityRepo.Models.User
+
+@if(Model != null)
+{
+    <li>@Model.Email</li>
+    <li>@Html.ActionLink("Выход", "Logout", "Authentication")</li>
+}
+else
+{
+    <li>@Html.ActionLink("Вход", "Index", "Authentication")</li>
+    <li>@Html.ActionLink("Регистрация", "Add", "Users")</li>
+}

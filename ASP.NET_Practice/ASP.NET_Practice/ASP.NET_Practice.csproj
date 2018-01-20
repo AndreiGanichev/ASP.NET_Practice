@@ -162,10 +162,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Default\Controllers\AuthenticationController.cs" />
     <Compile Include="Areas\Default\Controllers\HomeController.cs" />
     <Compile Include="Areas\Default\Controllers\RolesController.cs" />
     <Compile Include="Areas\Default\DefaultAreaRegistration.cs" />
     <Compile Include="Areas\Default\Controllers\UsersController.cs" />
+    <Compile Include="Auth\AuthHttpModule.cs" />
+    <Compile Include="Auth\CustomAuthentication.cs" />
+    <Compile Include="Auth\IAuthentication.cs" />
+    <Compile Include="Auth\IUserProvider.cs" />
+    <Compile Include="Auth\UserIdentity.cs" />
+    <Compile Include="Auth\UserPrincipal.cs" />
+    <Compile Include="Controllers\BaseAuthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RepositoryBaseController.cs" />
     <Compile Include="Global.asax.cs">
@@ -174,8 +182,9 @@
     <Compile Include="Helpers\CaptchaImage.cs" />
     <Compile Include="Mappers\CommonMapper.cs" />
     <Compile Include="Mappers\IMapper.cs" />
+    <Compile Include="Models\AuthViewModel.cs" />
     <Compile Include="Models\Sword.cs" />
-    <Compile Include="Models\UserView.cs" />
+    <Compile Include="Models\UserViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +201,9 @@
     <Content Include="Areas\Default\Views\Users\GetAll.cshtml" />
     <Content Include="Areas\Default\Views\Roles\GetAll.cshtml" />
     <Content Include="Areas\Default\Views\Users\Add.cshtml" />
+    <Content Include="Areas\Default\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Default\Views\Home\UserLogin.cshtml" />
+    <Content Include="Areas\Default\Views\Authentication\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -204,7 +216,7 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Default\Models\" />
-    <Folder Include="Areas\Default\Views\Shared\" />
+    <Folder Include="Views\BaseAuth\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASP.NET_Practice.DataAccess.SingleEntityRepo\ASP.NET_Practice.DataAccess.SingleEntityRepo.csproj">

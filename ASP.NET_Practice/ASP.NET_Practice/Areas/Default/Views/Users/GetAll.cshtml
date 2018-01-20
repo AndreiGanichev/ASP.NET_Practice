@@ -1,6 +1,6 @@
 ﻿@model List<ASP.NET_Practice.DataAccess.SingleEntityRepo.Models.User>
 @{
-    Layout = null;
+    Layout = "../Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
             @foreach(var user in Model)
             {
                 <li>
-                    <span>@user.Name</span>
+                    <span>@user.FirstName</span>
                     <span>@user.Email</span>
                     <span>@user.Role.Name</span>
                 </li>

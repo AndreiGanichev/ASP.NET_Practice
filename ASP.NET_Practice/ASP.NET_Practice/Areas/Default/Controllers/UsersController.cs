@@ -1,4 +1,6 @@
-﻿using ASP.NET_Practice.DataAccess.SingleEntityRepo;
+﻿using ASP.NET_Practice.Auth;
+using ASP.NET_Practice.Controllers;
+using ASP.NET_Practice.DataAccess.SingleEntityRepo;
 using ASP.NET_Practice.DataAccess.SingleEntityRepo.Interfaces;
 using ASP.NET_Practice.DataAccess.SingleEntityRepo.Models;
 using ASP.NET_Practice.Helpers;
@@ -11,13 +13,12 @@ using System.Web.Mvc;
 
 namespace ASP.NET_Practice.Areas.Default.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : BaseAuthController
     {
         private IGenericRepository<User> _usersRepo;
         private IMapper _mapper;
 
-
-        public UsersController(IGenericRepository<User> usersRepo, IMapper mapper)
+        public UsersController(IGenericRepository<User> usersRepo, IMapper mapper, IAuthentication auth) : base(auth)
         {
             _usersRepo = usersRepo;
             _mapper = mapper;
@@ -34,11 +35,11 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
         public ActionResult Add()
         {
             ViewBag.Title = "Добавление пользователя";
-            return View(new UserView());
+            return View(new UserViewModel());
         }
 
         [HttpPost]
-        public ActionResult Add(UserView newUser)
+        public ActionResult Add(UserViewModel newUser)
         {
             var existSameEmail = _usersRepo.GetAll().Any(u => u.Email == newUser.Email);
             
@@ -54,7 +55,7 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
 
             if (ModelState.IsValid)
             {
-                var userModel = (User)_mapper.Map(newUser, typeof(UserView), typeof(User));
+                var userModel = (User)_mapper.Map(newUser, typeof(UserViewModel), typeof(User));
                 userModel.AddAtDate = DateTime.UtcNow;
                 userModel.RoleId = 1;//TODO: добавить в UI выбор роли
                 _usersRepo.Add(userModel);

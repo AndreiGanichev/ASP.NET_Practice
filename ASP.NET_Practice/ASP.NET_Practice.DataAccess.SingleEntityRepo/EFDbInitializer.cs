@@ -5,7 +5,7 @@ using System.Data.Entity;
 
 namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
 {
-    public class EFDbInitializer : DropCreateDatabaseAlways<PracticeContext>
+    public class EFDbInitializer : DropCreateDatabaseIfModelChanges<PracticeContext>
     {
         protected override void Seed(PracticeContext context)
         {
@@ -37,7 +37,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
             var user1 = new User
             {
                 Id = 1,
-                Name = "Иван",
+                FirstName = "Иван",
                 BirthDate = new DateTime(1990, 12, 31),
                 Email = "ivan@nowhere.com",
                 RoleId = 1,
@@ -48,7 +48,7 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo
             var user2 = new User
             {
                 Id = 1,
-                Name = "Петр",
+                FirstName = "Петр",
                 BirthDate = new DateTime(1989, 1, 15),
                 Email = "petr@somewhere.com",
                 RoleId = 2,

@@ -29,6 +29,9 @@ namespace ASP.NET_Practice.DataAccess.SingleEntityRepo.Repositories
             _dbContext.SaveChanges();
         }
 
+        //TODO: в такой реализации не работает: 
+        //The LINQ expression node type 'Invoke' is not supported in LINQ to Entities
+        //либо убрать, либо разобраться
         public IQueryable<T> Get(Func<T, bool> predicate)
         {
             return _entities

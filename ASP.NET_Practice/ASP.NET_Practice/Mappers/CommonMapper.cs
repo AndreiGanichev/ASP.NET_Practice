@@ -12,11 +12,11 @@ namespace ASP.NET_Practice.Mappers
             AutoMapper.Mapper.Initialize(
                 cfg =>
                 {
-                    cfg.CreateMap<User, UserView>()
+                    cfg.CreateMap<User, UserViewModel>()
                         .ForMember(tgt => tgt.BirthDay, opt => opt.MapFrom(src => src.BirthDate.Day))
                         .ForMember(tgt => tgt.BirthMonth, opt => opt.MapFrom(src => src.BirthDate.Month))
                         .ForMember(tgt => tgt.BirthYear, opt => opt.MapFrom(src => src.BirthDate.Year));
-                    cfg.CreateMap<UserView, User>()
+                    cfg.CreateMap<UserViewModel, User>()
                         .ForMember(tgt => tgt.BirthDate, opt => opt.MapFrom(src => new DateTime(src.BirthYear, src.BirthMonth, src.BirthDay)));
                 });
         }

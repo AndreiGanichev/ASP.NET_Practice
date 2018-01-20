@@ -15,9 +15,9 @@ namespace ASP.NET_Practice.Areas.Default
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
-                name: "Default",
+                name: "default",
                 url: "{controller}/{action}/{id}",
-                defaults: new {area = "default", controller = "Home", action = "Index", id = UrlParameter.Optional },
+                defaults: new {controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new[] { "ASP.NET_Practice.Areas.Default.Controllers" } //назначается приоритетным пр-вом имен при анализе запроса
             );
         }

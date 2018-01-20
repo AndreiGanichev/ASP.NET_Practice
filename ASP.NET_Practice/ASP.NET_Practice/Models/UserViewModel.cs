@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace ASP.NET_Practice.Models
 {
     //показаны два варианта валидации: IValidatableObject и с помощью атрибутов DataAnnotations
-    public class UserView : IValidatableObject
+    public class UserViewModel : IValidatableObject
     {
         public string FirstName { get; set; }
 
