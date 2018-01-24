@@ -24,9 +24,9 @@
             <div class="control-group">
                 <label class="control-label" for="BirthDate">Дата рождения</label>
                 <div class="controls">
-                    @Html.DropDownList("BirthDay", Model.BirthDayList)
-                    @Html.DropDownList("BirthMonth", Model.BirthMonthList)
-                    @Html.DropDownList("BirthYear", Model.BirthYearList)
+                    @Html.DropDownList("BirthDay", Model.BirthDayList, new { @class= "select-day"})
+                    @Html.DropDownList("BirthMonth", Model.BirthMonthList, new { @class = "select-month"})
+                    @Html.DropDownList("BirthYear", Model.BirthYearList, new { @class = "select-year"})
                 </div>
             </div>
             <div class="control-group">

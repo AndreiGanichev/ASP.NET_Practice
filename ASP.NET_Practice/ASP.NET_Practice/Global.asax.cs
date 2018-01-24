@@ -6,6 +6,8 @@ using System.Data.Entity;
 using ASP.NET_Practice.Areas.Admin;
 using ASP.NET_Practice.Areas.Default;
 using ASP.NET_Practice.Mappers;
+using ASP.NET_Practice.App_Start;
+using System.Web.Optimization;
 
 namespace ASP.NET_Practice
 {
@@ -35,6 +37,7 @@ namespace ASP.NET_Practice
             //AreaRegistration.RegisterAllAreas();
 
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BoundleConfig.RegisterBundles(BundleTable.Bundles);
             Database.SetInitializer<PracticeContext>(new EFDbInitializer());
             CommonMapper.Configurate();
         }

@@ -11,18 +11,16 @@
     <title>All users</title>
 </head>
 <body>
-    <div>
-        <ul>
-            @foreach(var user in Model)
+    <p>
+            @foreach (var user in Model)
             {
-                <li>
-                    <span>@user.FirstName</span>
-                    <span>@user.Email</span>
-                    <span>@user.Role.Name</span>
-                </li>
+                <div class="item">
+                    <span class="name">@user.FirstName</span>
+                    <span class="email">@user.Email</span>
+                    <span class="role">@user.Role.Name</span>
+                </div>
             }
-        </ul>
-    </div>
+    </p>
     <button>
         @Html.ActionLink("Добавить", "Add", "Users")
     </button>

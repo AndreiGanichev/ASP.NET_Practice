@@ -1,4 +1,5 @@
 ﻿@{
+    ViewBag.Title = "Home";
     Layout = "../Shared/_Layout.cshtml";
 }
 
@@ -7,10 +8,10 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
-    <h1>Роли</h1>
+    <h1>Asp.Net Practice</h1>
     <div class="menu">
         <ul>
             <li>@Html.ActionLink("Пользователи", "GetAll", "Users")</li>

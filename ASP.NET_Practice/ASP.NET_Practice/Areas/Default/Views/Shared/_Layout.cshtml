@@ -4,18 +4,26 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css/jqueryui")
+    @Styles.Render("~/Content/css")
+    @RenderSection("styles", false)
+    @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
     <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
             <div class="container">
-                <ul class="navbar nav-pills pull-right">
+                <ul class="navbar nav-pills float-right">
                     @Html.Action("UserLogin", "Home")
                 </ul>
             </div>
-        </div> 
     </div>
 
     @RenderBody()
+    <div id="PopupWrapper"></div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/common")
+    @RenderSection("scripts", required: false)
 </body>
 </html>

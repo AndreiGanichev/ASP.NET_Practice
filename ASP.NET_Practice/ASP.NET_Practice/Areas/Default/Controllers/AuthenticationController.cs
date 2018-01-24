@@ -10,13 +10,13 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
         public AuthenticationController(IAuthentication auth) : base(auth) { }
 
         [HttpGet]
-        public ActionResult Index()
+        public ActionResult Ajax()
         {
             return View(new AuthViewModel());
         }
 
         [HttpPost]
-        public ActionResult Index(AuthViewModel authViewModel)
+        public ActionResult Ajax(AuthViewModel authViewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -31,7 +31,7 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
                 return View(authViewModel);
             }
 
-            return RedirectToAction("Index", "Home");
+            return View("_EnterSuccess");
         }
 
         public ActionResult Logout()

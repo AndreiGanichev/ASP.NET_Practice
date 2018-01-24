@@ -1,5 +1,6 @@
 ﻿@model List<ASP.NET_Practice.DataAccess.SingleEntityRepo.Models.Role>
 @{
+    ViewBag.Title = "Роли";
     Layout = "../Shared/_Layout.cshtml";
 }
 
@@ -8,18 +9,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Роли</title>
+    <title>@ViewBag.Title</title>
 </head>
 <body>
     <div> 
-        @foreach(var role in Model)
+        @foreach (var role in Model)
         {
-            <ul>
-                <li>
-                    <span>@role.Name</span>
-                    <span>@role.Code</span>
-                </li>
-            </ul>
+            <div class="item">
+                <span class="name">@role.Name</span>
+                <span class="code">@role.Code</span>
+            </div>
         }
     </div>
     <button>
