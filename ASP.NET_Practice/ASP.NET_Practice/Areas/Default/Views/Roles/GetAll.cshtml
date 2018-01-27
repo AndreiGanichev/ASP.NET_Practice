@@ -1,32 +1,22 @@
 ﻿@model List<ASP.NET_Practice.DataAccess.SingleEntityRepo.Models.Role>
 @{
-    Layout = null;
+    ViewBag.Title = "Роли";
+    Layout = "../Shared/_Layout.cshtml";
 }
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Роли</title>
-</head>
-<body>
-    <div> 
-        @foreach(var role in Model)
+<div>
+    <ul class="list-group">
+        @foreach (var role in Model)
         {
-            <ul>
-                <li>
-                    <span>@role.Name</span>
-                    <span>@role.Code</span>
-                </li>
-            </ul>
+            <li class="list-group-item">
+                <span>@role.Name</span>
+                <span>@role.Code</span>
+            </li>
         }
-    </div>
+    </ul>
+</div>
+<div name="footer" class="btn-block">
     <button>
         @Html.ActionLink("Добавить", "Add", "Roles")
     </button>
-    <div name="footer">
         @Html.ActionLink("Назад", "Index", "Home")
     </div>
-</body>
-</html>

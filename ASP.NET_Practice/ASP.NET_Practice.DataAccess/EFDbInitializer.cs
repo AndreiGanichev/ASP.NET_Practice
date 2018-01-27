@@ -37,7 +37,7 @@ namespace ASP.NET_Practice.DataAccess
             var user1 = new User
             {
                 Id = 1,
-                Name = "Иван",
+                FirstName = "Иван",
                 Email = "ivan@nowhere.com",
                 RoleId = 1,
                 Password = "ivanTheGreat",
@@ -47,7 +47,7 @@ namespace ASP.NET_Practice.DataAccess
             var user2 = new User
             {
                 Id = 1,
-                Name = "Петр",
+                FirstName = "Петр",
                 Email = "petr@somewhere.com",
                 RoleId = 1,
                 Password = "petrTheFirst",

@@ -23,11 +23,23 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
             _mapper = mapper;
         }
 
-        // GET: SingleEntityRepo
-        public ActionResult GetAll()
+
+        public ActionResult GetAll(int page = 1, string searchString = null)
         {
-            var users = _usersRepo.GetAll().IncludeMultiple(user => user.Role).ToList();
-            return View(users);
+            var users = _usersRepo.GetAll().IncludeMultiple(user => user.Role);
+
+            if (!string.IsNullOrWhiteSpace(searchString))
+            {
+                var filteredUsers = SearchHelper.FindUsers(users, searchString);
+                users = filteredUsers.AsQueryable<User>();
+                ViewBag.SearchString = searchString;
+            }
+
+            var pageInfo = new PageInfo<User>(
+                users,
+                page,
+                3);
+            return View(pageInfo);
         }
 
         [HttpGet]

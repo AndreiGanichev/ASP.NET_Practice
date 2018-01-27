@@ -60,7 +60,7 @@ namespace ASP.NET_Practice.App_Start
             kernel.Bind<IGenericRepository<Role>>().To<GenericRepository<Role>>();
             kernel.Bind<IMapper>().To<CommonMapper>();
             kernel.Bind<SingleEntityRepoContext>().ToConstructor(
-                c => new SingleEntityRepoContext(ConfigurationManager.ConnectionStrings["PracticeContext"].ConnectionString));         
+                c => new SingleEntityRepoContext(ConfigurationManager.ConnectionStrings["PracticeContextLocal"].ConnectionString));         
         }
     }
 }
