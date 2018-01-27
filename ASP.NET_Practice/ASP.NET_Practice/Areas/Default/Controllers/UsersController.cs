@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace ASP.NET_Practice.Areas.Default.Controllers
 {
-    public class UsersController : Controller
+    public class UsersController : ASP.NET_Practice.Controllers.ConfigBaseController
     {
         private IGenericRepository<User> _usersRepo;
         private IMapper _mapper;

@@ -194,7 +194,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -206,11 +208,16 @@
     <Compile Include="Areas\Default\Controllers\RolesController.cs" />
     <Compile Include="Areas\Default\DefaultAreaRegistration.cs" />
     <Compile Include="Areas\Default\Controllers\UsersController.cs" />
+    <Compile Include="Controllers\ConfigBaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RepositoryBaseController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Global\Config\Configuration.cs" />
+    <Compile Include="Global\Config\IConfiguration.cs" />
+    <Compile Include="Global\Config\IconSize.cs" />
+    <Compile Include="Global\Config\IconSizesConfigSection.cs" />
     <Compile Include="Helpers\CaptchaImage.cs" />
     <Compile Include="Helpers\CustomHtmlHelper.cs" />
     <Compile Include="Helpers\SearchHelper.cs" />
