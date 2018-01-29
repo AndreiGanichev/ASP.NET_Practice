@@ -194,6 +194,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.0.js" />
     <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\my-scripts.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -204,6 +205,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Default\Controllers\FileController.cs" />
     <Compile Include="Areas\Default\Controllers\HomeController.cs" />
     <Compile Include="Areas\Default\Controllers\RolesController.cs" />
     <Compile Include="Areas\Default\DefaultAreaRegistration.cs" />
@@ -218,8 +220,11 @@
     <Compile Include="Global\Config\IConfiguration.cs" />
     <Compile Include="Global\Config\IconSize.cs" />
     <Compile Include="Global\Config\IconSizesConfigSection.cs" />
+    <Compile Include="Global\Config\MimeType.cs" />
+    <Compile Include="Global\Config\MimeTypeConfigSection.cs" />
     <Compile Include="Helpers\CaptchaImage.cs" />
     <Compile Include="Helpers\CustomHtmlHelper.cs" />
+    <Compile Include="Helpers\JsonHelper.cs" />
     <Compile Include="Helpers\SearchHelper.cs" />
     <Compile Include="Mappers\CommonMapper.cs" />
     <Compile Include="Mappers\IMapper.cs" />
@@ -257,6 +262,8 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Areas\Default\Models\" />
+    <Folder Include="Areas\Default\Views\File\" />
+    <Folder Include="Content\Photos\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ASP.NET_Practice.DataAccess.SingleEntityRepo\ASP.NET_Practice.DataAccess.SingleEntityRepo.csproj">
@@ -272,6 +279,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
+  <PropertyGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />

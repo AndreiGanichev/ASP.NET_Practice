@@ -16,9 +16,11 @@ namespace ASP.NET_Practice.App_Start
                 .Include("~/Scripts/common.js"));
             bundles.Add(new ScriptBundle("~/bundles/jqueryui")
                 .Include("~/Scripts/jquery-ui-1.*"));
+            bundles.Add(new ScriptBundle("~/bundles/myScripts")
+                .Include("~/Scripts/my-scripts.js"));
+
             bundles.Add(new StyleBundle("~/Content/css/jqueryui")
                 .Include("~/Content/jquery-ui-1*"));
-
             bundles.Add(new StyleBundle("~/Content/css")
                 .Include("~/Content/bootstrap*"));
         }

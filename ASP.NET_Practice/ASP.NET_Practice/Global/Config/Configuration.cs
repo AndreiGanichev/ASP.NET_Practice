@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Linq;
 
 namespace ASP.NET_Practice.Global.Config
@@ -14,6 +15,15 @@ namespace ASP.NET_Practice.Global.Config
             {
                 var iconConfig = (IconSizesConfigSection)ConfigurationManager.GetSection("iconConfig");
                 return iconConfig.IconSizes.OfType<IconSize>().AsQueryable();
+            }
+        }
+
+        public IQueryable<MimeType> MimeTypes
+        {
+            get
+            {
+                var mimeTypesComfig = (MimeTypeConfigSection)ConfigurationManager.GetSection("mimeTypeConfig");
+                return mimeTypesComfig.MimeTypes.OfType<MimeType>().AsQueryable();
             }
         }
     }

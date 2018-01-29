@@ -31,6 +31,8 @@ namespace ASP.NET_Practice.Models
 
         public int BirthYear { get; set; }
 
+        public string PhotoPath { get; set; }
+
         public IEnumerable<SelectListItem> BirthDayList
         {
             get

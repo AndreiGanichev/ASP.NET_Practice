@@ -31,10 +31,7 @@
 <div>
     @Html.GetPageLinks(Model.TotalPageNumber, Model.CurrentPageNumber, x => Url.Action("GetAll", new {page = x}))
 </div>
-<div name="footer" class="btn-block">
-    <button>
-        @Html.ActionLink("Добавить", "Add", "Users")
-    </button>
-
-    @Html.ActionLink("Назад", "Index", "Home")
+<div class="btn-block">   
+    @Html.ActionLink("Добавить", "Add", "Users", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Назад", "Index", "Home", null, new { @class = "btn btn-link" })
 </div>  

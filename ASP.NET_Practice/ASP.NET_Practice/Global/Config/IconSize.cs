@@ -3,7 +3,7 @@
 namespace ASP.NET_Practice.Global.Config
 {
     /// <summary>
-    /// Preview icon size configuration element
+    /// Type to map icon size configuration element
     /// </summary>
     public class IconSize : ConfigurationElement
     {

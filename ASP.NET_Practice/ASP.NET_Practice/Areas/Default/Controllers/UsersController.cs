@@ -11,18 +11,16 @@ using System.Web.Mvc;
 
 namespace ASP.NET_Practice.Areas.Default.Controllers
 {
-    public class UsersController : ASP.NET_Practice.Controllers.ConfigBaseController
+    public class UsersController : Controller
     {
         private IGenericRepository<User> _usersRepo;
         private IMapper _mapper;
-
 
         public UsersController(IGenericRepository<User> usersRepo, IMapper mapper)
         {
             _usersRepo = usersRepo;
             _mapper = mapper;
         }
-
 
         public ActionResult GetAll(int page = 1, string searchString = null)
         {
@@ -53,11 +51,16 @@ namespace ASP.NET_Practice.Areas.Default.Controllers
         public ActionResult Add(UserView newUser)
         {
             var existSameEmail = _usersRepo.GetAll().Any(u => u.Email == newUser.Email);
-            
+
             if (existSameEmail)
             {
                 ModelState.AddModelError("Email", "Пользователь с таким Email уже зарегистрирован");
-            } 
+            }
+
+            if (string.IsNullOrWhiteSpace(newUser.PhotoPath) || !System.IO.File.Exists(newUser.PhotoPath))
+            {
+                ModelState.AddModelError("PhotoPath", "Загрузите фотографию");
+            }
 
             if (newUser.Captcha != (string)Session[CaptchaImage.CaptchaValueKey])
             {

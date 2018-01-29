@@ -8,5 +8,6 @@ namespace ASP.NET_Practice.Global.Config
     public interface IConfiguration
     {
         IQueryable<IconSize> IconSizes { get;}
+        IQueryable<MimeType> MimeTypes { get; }
     }
 }

@@ -3,21 +3,15 @@
     Layout = "../Shared/_Layout.cshtml";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>ViewBag.Title</title>
-</head>
-<body>
-    <div class="nav btn-group" role="group" title="Меню" aria-label="menu">
-        <button type="button" class="btn-secondary">
-            @Html.ActionLink("Пользователи", "GetAll", "Users", null, new { @class = "nav-link" })
-        </button>
-        <button type="button" class="btn-secondary">
-            @Html.ActionLink("Роли", "GetAll", "Roles", null, new { @class = "nav-link" })
-        </button>
+<div class="navbar">
+    <ul class="nav">
+        <li>
+            @Html.ActionLink("Пользователи", "GetAll", "Users")
+        </li>
+        <li>
+            @Html.ActionLink("Роли", "GetAll", "Roles")
+        </li>
+    </ul>
 </div>
-</body>
-</html>
+
+

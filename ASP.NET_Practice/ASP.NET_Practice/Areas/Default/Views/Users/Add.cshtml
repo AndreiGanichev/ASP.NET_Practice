@@ -4,9 +4,9 @@
     Layout = "../Shared/_Layout.cshtml";
 }
 
-    @using (Html.BeginForm("Add", "Users", FormMethod.Post))
-    {
-        <fieldset>
+@using (Html.BeginForm("Add", "Users", FormMethod.Post))
+{
+    <fieldset>
             <div class="form-group">
                 <label for="Name">Имя</label>
                 <div class="controls">
@@ -44,6 +44,13 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="PhotoPath">Выберите фото</label>
+                @Html.ValidationMessage("PhotoPath")
+                @Html.TextBox("PhotoPath", Model.PhotoPath, new { @class = "form-control", @type = "hidden", id = "photoPath" })
+                    <input type="file" id="browsePhoto" />
+                    <button id="uploadPhoto">Загрузить</button>
+            </div>
+            <div class="form-group">
                 <label for="Captcha">
                     <img src=@Url.Action("Captcha", "Users") alt="captcha" />
                 </label>
@@ -57,4 +64,6 @@
                 @Html.ActionLink("Отмена", "GetAll", null, null, new { @class = "btn" })
             </div>
         </fieldset>
-    }
+}
+
+
